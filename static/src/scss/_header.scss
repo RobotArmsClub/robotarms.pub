@@ -1,0 +1,23 @@
+/** HEADER STUFF **/
+.header-stripe {
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+	&.no-margin {
+		margin-bottom: 0;
+	}
+}
+.header-container {
+	color: #fff;
+	padding: 10px;
+	position: relative;
+}
+.header-decoration-strip {
+	background-image: url('/static/img/home-spread/background-small.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40px;
+	width: 100%;
+	float: left;
+}

@@ -1,0 +1,36 @@
+$highlight-red: #FF4D4D;
+$deep-red: #AE1F1F;
+
+body, p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 900;
+}
+h2 {
+	color: #AE1F1F;
+	text-transform: uppercase;
+}
+h3 {
+	color: #AE1F1F;
+	font-size: 32px;
+}
+body {
+	background-color: #fff;
+}
+body, p {
+	font-size: 16px;
+}
+a:link,
+a:visited {
+	color: #D60000;
+}
+p a:hover,
+p a:active {
+	background-color: #FF4D4D;
+	color: #fff;
+}
+
+ul, ol {
+	margin-left: 35px;
+}

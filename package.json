@@ -1,0 +1,22 @@
+{
+  "name": "robotarms.pub",
+  "version": "0.0.1",
+  "description": "This is the repo for the site. It's running on Django 1.9.5 and uses Node.js build tools to operate the front-end build chain.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-exec": "^0.4.6",
+    "grunt-sass": "^1.0.0",
+    "load-grunt-tasks": "^3.2.0"
+  },
+  "author": "Way Spurr-Chen",
+  "license": "ISC",
+  "engines": {
+    "node": "4.4.3"
+  }
+}

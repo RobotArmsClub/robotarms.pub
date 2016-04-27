@@ -1,23 +1,77 @@
-/** HEADER STUFF **/
-.header-stripe {
-	border-bottom: 1px solid #ccc;
-	position: relative;
-	overflow: hidden;
-	margin-bottom: 15px;
-	&.no-margin {
-		margin-bottom: 0;
-	}
+.site-header {
+    width: 100%;
+    height: 80px;
+    position: relative;
 }
-.header-container {
-	color: #fff;
-	padding: 10px;
-	position: relative;
+
+.site-header-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
 }
-.header-decoration-strip {
-	background-image: url('/static/img/home-spread/background-small.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 40px;
-	width: 100%;
-	float: left;
+
+.site-header-title-space {
+    font-size: 0;
+}
+.site-header-title {
+    color: #434343;
+    height: 63px;
+    line-height: 67px;
+    border-left: 50px solid #434343;
+    vertical-align: bottom;
+    display: inline-block;
+    border-right: 50px solid #434343;
+    font-size: 86px;
+    text-transform: uppercase;
+}
+.site-header-nav {
+    font-weight: 700;
+    text-transform: uppercase;
+
+    ul {
+        font-size: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        border-left: 30px solid #434343;
+        color: #434343;
+        display: inline-block;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 0 12px;
+
+        &:first-child {
+            border-left: none;
+        }
+    }
+}
+
+.site-header-rainbow {
+    @extend .clearfix;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+$rainbow-map: (
+    one: $green,
+    two: $salmon,
+    three: $gold,
+    four: $black,
+    five: $teal
+);
+
+.site-header-rainbow-chunk {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+@each $section, $color in $rainbow-map {
+    .site-header-rainbow-chunk.#{$section} {
+        background-color: $color;
+    }
 }
